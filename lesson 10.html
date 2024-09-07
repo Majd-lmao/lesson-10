@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced selectors</title>
+        <style>
+            input[type="text"] {
+                border:2px solid blue;
+             }
+             input[type="password"]{
+                border:2px solid green;
+             }
+             ul>li{
+                color:yellowgreen;
+             }
+             h3+p{
+                color:brown;
+             }
+             a:hover{
+                color:salmon;
+             } 
+            li:nth-child(2){
+                background-color:aqua;
+            }
+            div:not(.div1){
+                border:2px dashed goldenrod;
+            }
+            a::after{
+                content:"🚀";
+            }
+            li::before{
+                content:"☕";
+            }
+            p::first-letter{
+                font-size:40px
+            }
+        </style>
+    </head>
+    <body>
+        <h4>advanced selectors</h4>
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+        <ul>
+            <li>tea</li>
+            <li>coffee</li>
+            <li>milk</li>
+        </ul>
+        <h3>this is heading</h3>
+        <p id="p1">this is first paragraph</p>
+        <p id="p2">this is first paragraph</p>
+        <div class="div1">this is first devision</div>
+        <div class="div2">this is second devision</div>
+    </body>
+</html>
